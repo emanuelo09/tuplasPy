@@ -1,0 +1,62 @@
+Tuplas
+
+Ej= 
+Variable = "hola", 1, 1.25, True
+print(Variable)
+
+
+Metodos que no aplican en tuplas de python
+
+.pop()
+.insert()
+.shift()
+.append()
+.sort()
+
+
+
+
+Variable = ("hola", 1, 1.25, True)
+print(Variable[1])
+#Indexacion: index()
+indice = Variable.index(1.25)
+print(indice)
+#Longitud: len()
+longitud = len(Variable)
+print(longitud)
+
+numeros = (1, 2, 3, 4, 5, 6, 5, 2, 8, 1, 6, 7, 4, 4, 9, 2)
+#Repeticion: count()
+print(numeros.count(4))
+#De tupla a lista: list()
+listaNumeros = list(numeros)
+print(listaNumeros)
+#De lista a tupla: tuple()
+tuplaNumeros = tuple(listaNumeros)
+print(tuplaNumeros)
+
+#Elemento mayor y menor: max(), min()
+mayor = max(numeros)
+menor = min(numeros)
+print(f"El numero mayor de la tupla es {mayor}")
+print(f"El numero menor de la tupla es {menor}")
+print("El numero mayor es {0} y el menor es {1}".format(mayor, menor))
+
+#%d Enteros
+#%f Decimales
+#%s Texto
+print("El mayor es %d y el menor es %d"%(mayor, menor))
+
+#Eliminar la tupla: No se puede, se tiene que convertir en lista y luego eliminarla
+
+#Recorrer la tupla
+for elemento in numeros:
+    print(elemento)
+
+
+for indic in range(len(numeros)):
+    print(indic, numeros[indic])
+
+#Recorrer de forma inversa    
+for indi in range (len(numeros)-1,-1,-1):
+    print(indi,"es la posicion del elemento", numeros[indi])
